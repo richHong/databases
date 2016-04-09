@@ -1,7 +1,7 @@
 var models = require('../models');
 var bluebird = require('bluebird');
-
-
+bluebird.promisifyAll(require('./db').prototype)
+//client-server requests
 
 module.exports = {
   messages: {

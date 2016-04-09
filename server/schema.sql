@@ -1,10 +1,27 @@
-CREATE DATABASE chat;
+-- CREATE DATABASE chat;
 
 USE chat;
 
-CREATE TABLE messages (
-  /* Describe your table here.*/
+CREATE TABLE `Messages` (
+  `MessageID` INT(3) NOT NULL AUTO_INCREMENT,
+  `TweetText` varchar(140) NOT NULL,
+  `RoomID` int(3) NOT NULL,
+  `UserID` int(3) NOT NULL,
+  PRIMARY KEY (`MessageID`)
 );
+
+CREATE TABLE `User` (
+  `UserID` int(3) NOT NULL AUTO_INCREMENT,
+  `Username` varchar(140),
+  PRIMARY KEY (`UserID`)
+);
+
+CREATE TABLE `Rooms` (
+  `RoomID` int(3) NOT NULL AUTO_INCREMENT,
+  `RoomName` varchar(140) NOT NULL,
+  PRIMARY KEY (`RoomID`)
+);
+
 
 /* Create other tables and define schemas for them here! */
 

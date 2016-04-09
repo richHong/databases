@@ -4,9 +4,9 @@ USE chat;
 
 CREATE TABLE `Messages` (
   `MessageID` INT(3) NOT NULL AUTO_INCREMENT,
-  `TweetText` varchar(140) NOT NULL,
-  `RoomID` int(3) NOT NULL,
-  `UserID` int(3) NOT NULL,
+  `Username` varchar(140) NOT NULL,
+  `message` varchar(140) NOT NULL,
+  `RoomName` varchar(140) NOT NULL,
   PRIMARY KEY (`MessageID`)
 );
 

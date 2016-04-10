@@ -12,17 +12,7 @@ var con = mysql.createConnection({
   database: "chat"
 });
 
-// mysql.connect(con, function(err){
-//   if(err){
-//     console.log('Error connecting to Db');
-//     return;
-//   }
-//   console.log('Connection established');
-// });
-
-// mysql.end(function(err) {
-
-// });
+// con.connect();
 
 module.exports = con;
 
